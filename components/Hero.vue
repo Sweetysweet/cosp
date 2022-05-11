@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <section class="hero">
       <div class="hero__container">
         <div class="hero-top">
           <span>Life</span>
@@ -144,7 +144,7 @@
           </a>
         </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

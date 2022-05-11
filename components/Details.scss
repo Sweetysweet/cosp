@@ -1,0 +1,39 @@
+@import '../assets/abstract/vars.scss';
+
+.details {
+  margin-bottom: 100px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1600px;
+    justify-content: space-between;
+  }
+
+  .imagine-block {
+    &__image {}
+
+    &__text {
+      width: 646px;
+      margin-right: 70px;
+      &--title > span {
+        font-size: 50px;
+        line-height: 55px;
+        color: transparent;
+        background-clip: text;
+        background-image: $bg-gradient
+      }
+      &--description {
+        padding-left: 6px;
+        margin-top: 9px;
+        span {
+        font-family: 'Segoe UI';
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 300;
+        }
+    }
+    }
+  }
+}

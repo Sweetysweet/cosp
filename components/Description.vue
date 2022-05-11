@@ -1,5 +1,5 @@
 <template>
-  <div class="description">
+  <section class="description">
     <div class="description__container">
       <div class="description-title">
         <span class="description-title--text"
@@ -8,12 +8,14 @@
         <span class="description-title--logo">INCOSPLAY</span>
       </div>
       <div class="description-subtitle">
-        <span class="description-subtitle-text description-subtitle-text--more "
+        <span class="description-subtitle-text description-subtitle-text--more"
           >A unified ideological and technical ecosystem focused on an audience
           that is passionate about cosplay. We unite under our brand both
           producers of media content:</span
         >
-        <span class="description-subtitle-text description-subtitle-text--accent">
+        <span
+          class="description-subtitle-text description-subtitle-text--accent"
+        >
           photographers, writers, journalists, sound directors, producers of
           clothes, producers of shoes, producers of wigs and producers of
           accessories, event organizers</span
@@ -23,7 +25,7 @@
         >.
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

@@ -3,6 +3,7 @@
   <Header />
   <Hero />
   <Description />
+  <Details />
 </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Description from '@/components/Description'
+import Details from '@/components/Details'
 export default {
   name: 'IndexPage',
   components: {
     Header,
     Hero,
-    Description
+    Description,
+    Details
   }
 }
 </script>
