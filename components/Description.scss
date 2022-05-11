@@ -1,12 +1,14 @@
 @import '../assets/abstract/vars.scss';
 .description {
+    margin-bottom: 340px;
     &__container {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
     &-title {
-        margin-left: 120px;
+        margin-left: 126px;
+        margin-bottom: 104px;
         &--text {
         font-size: 80px;
         }
@@ -18,9 +20,11 @@
         }
     }
     &-subtitle {
-        max-width: 990px;
+        width: 946px;
         margin: 0 auto;
+        line-height: 40px;
         &-text {
+            letter-spacing: 0.1em;
             &--more {
                 font-family: 'Segoe UI';
                 font-weight: 200;
