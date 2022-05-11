@@ -1,0 +1,47 @@
+@import './abstract/vars.scss';
+@import './reset.scss';
+@import './fonts.scss';
+.container-fluid {
+  width: 1920px;
+}
+
+body {
+  font-family: 'Manjari';
+  font-weight: normal;
+  background-color: #0A010E;
+  color: #F4FFFE;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

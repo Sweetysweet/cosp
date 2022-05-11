@@ -1,0 +1,34 @@
+@import '../assets/abstract/vars.scss';
+.hero {
+    display: inline-block;
+    margin-top: 220px;
+    &__wrapper {
+    }
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        left: 490px;
+    }
+    &-top, &-subtitle {
+    position: relative;
+    font-size: 36px;
+    }
+    &-top {
+        top: 32px;
+        left: 28px;
+    }
+    &-subtitle {
+        margin-left: auto;
+        margin-right: 0;
+        bottom: 56px;
+    }
+    &-title__large {
+        font-size: 128px;
+        color: transparent;    
+        background-clip: text;
+        background-image: $bg-gradient
+    }
+}
+
