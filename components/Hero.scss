@@ -1,34 +1,56 @@
 @import '../assets/abstract/vars.scss';
 .hero {
-    display: inline-block;
-    margin-top: 220px;
-    &__wrapper {
-    }
+    margin-top: 208px;
+    width: 100%;
     &__container {
         position: relative;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        left: 490px;
+        margin: 0 auto;
+        max-width: 908px;
+        transform: translateX(7px);
     }
     &-top, &-subtitle {
     position: relative;
     font-size: 36px;
     }
     &-top {
-        top: 32px;
-        left: 28px;
+        font-family: 'SegoeUI';
+        top: 25px;
+        left: 46px;
+        letter-spacing: 0.05em;
     }
     &-subtitle {
+        font-family: 'SegoeUI';
         margin-left: auto;
-        margin-right: 0;
-        bottom: 56px;
+        margin-right: -82px;
+        bottom: 52px;
+        letter-spacing: 0.02em;
     }
     &-title__large {
+        font-family: 'Manjari';
+        font-weight: bold;
+        letter-spacing: 0.195em;
         font-size: 128px;
         color: transparent;    
         background-clip: text;
         background-image: $bg-gradient
+    }
+    &-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 129px;
+        &__link {
+            display: block;
+            &--left {
+                margin-right: 21px;
+            }
+            &--right {
+                margin-left: -3px;
+            }
+        }
     }
 }
 

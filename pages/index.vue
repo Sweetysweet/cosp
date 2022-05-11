@@ -2,17 +2,20 @@
 <div class="container-fluid">
   <Header />
   <Hero />
+  <Description />
 </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Description from '@/components/Description'
 export default {
   name: 'IndexPage',
   components: {
     Header,
-    Hero
+    Hero,
+    Description
   }
 }
 </script>
