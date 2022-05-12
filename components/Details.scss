@@ -5,35 +5,78 @@
 
   &__container {
     position: relative;
-    display: flex;
     margin: 0 auto;
     max-width: 1600px;
-    justify-content: space-between;
   }
 
   .imagine-block {
-    &__image {}
-
     &__text {
-      width: 646px;
-      margin-right: 70px;
-      &--title > span {
-        font-size: 50px;
-        line-height: 55px;
-        color: transparent;
-        background-clip: text;
-        background-image: $bg-gradient
+      position: relative;
+      max-width: 715px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url('/images/details-1.png');
+        right: 880px;
+        bottom: -600px;
+        width: 710px;
+        height: 940px;
       }
-      &--description {
-        padding-left: 6px;
-        margin-top: 9px;
-        span {
-        font-family: 'Segoe UI';
-        font-size: 30px;
-        line-height: 40px;
-        font-weight: 300;
+
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+
+      &-inner {
+        margin-bottom: 10px;
+      }
+
+      &-inner::before {
+        content: "";
+        position: absolute;
+        width: 69px;
+        height: 3px;
+
+        left: 256px;
+        background-image: $bg-gradient;
+        text-shadow: $text-shadow;
+        top: -23px;
+      }
+
+      &-inner-part {
+        padding-left: 253px;
+
+        &--title,
+        &--subtitle {
+          font-size: 50px;
+          line-height: 55px;
+          color: transparent;
+          background-clip: text;
+          background-image: $bg-gradient;
+          text-shadow: $text-shadow;
         }
+      }
+
+      &-description {
+        padding-left: 6px;
+        width: 700px;
+
+        &-inner {
+          font-family: 'Segoe UI';
+          font-size: 30px;
+          line-height: 40px;
+
+          &--light {
+            font-weight: 100;
+          }
+
+          &--bold {
+            font-weight: 700;
+          }
+        }
+      }
     }
-    }
+
   }
 }
