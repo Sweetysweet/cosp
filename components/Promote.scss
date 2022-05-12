@@ -1,137 +1,128 @@
 @import '../assets/abstract/vars.scss';
 
 .promote {
-  width: 100%;
-
   &__container {
     margin: auto auto;
+    width: 100%;
+    max-width: 1600px;
   }
-}
 
-.promote-title {
-  text-align: center;
-  transform: translateX(-3px);
-
-  &__text {
-    font-size: 70px;
-
-    &--accent {
-      color: transparent;
-      background-clip: text;
-      background-image: $bg-gradient;
-      text-shadow: $text-shadow;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  &-title {
+    text-align: center;
+    margin-bottom: 50px;
+    &__text {
+      font-size: 70px;
+      &--accent {
+        color: transparent;
+        background-clip: text;
+        background-image: $bg-gradient;
+        text-shadow: $text-shadow;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
-}
 
-.promote-numbers {
-  height: 600px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 533px;
-  max-width: 730px;
-  &--left, &--right {
+  &__body {
+    display: flex;
+  }
+
+  &__left, 
+  &__right {
     width: 100%;
     max-width: 50%;
     display: flex;
   }
-  &--left {
-    justify-content: flex-end;
-    position: relative;
-    margin-right: 50px;
-    &::before {
-      content: '';
-      position: absolute;
-      background-image: url('/images/promoted-1.png');
-      width: 310px;
-      height: 660px;
-      padding: 0 50px;
-      background-size: cover;
-    }
-    .promote-numbers{
-      &-price {
-        display: block;
-        font-size: 50px;
-        line-height: 0.035em;
-        font-family: 'Segoe UI';
-        margin-bottom: 324px;
-        position: relative;
-        left: 134px;
-        bottom: 9px;
-        &::after {
-          position: absolute;
-          content: '';
-          width: 70px;
-          height: 3px;
-          background-image: $text-gradient;
-          top: 45px;
-          left: -13px;
-        }
-      }
-      &__description {
-        margin-left: 72px;
-    
-        &-title {
-          color: transparent;
-          background-clip: text;
-          background: $text-gradient;
-          text-shadow: $text-shadow;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          text-shadow: $text-shadow;
-          font-size: 50px;
-          margin-bottom: 20px;
-          position: relative;
-    
-          &::before {
-            position: absolute;
-            content: '';
-            width: 70px;
-            height: 3px;
-            background-image: $text-gradient;
-            bottom: 75px;
-            left: 0px;
-          }
-        }
-    
-        &-details {
-          font-size: 30px;
-          padding-top: 10px;
-          font-family: 'Segoe UI';
-          line-height: 40px;
-    
-          &-light {
-            font-weight: 300;
-    
-          }
-    
-          &-bold {
-            font-weight: 700;
-          }
-    
-        }
-      }
-    }
-  }
 
+  &__left {
+    justify-content: flex-end;
+  }
   &__right {
     justify-content: flex-start;
+  }
+  &__image-handler {
+    padding: 0 50px;
     position: relative;
-    margin-left: 80px;
-    &::before {
-      content: '';
-      position: absolute;
-      background-image: url('/images/promoted-1.png');
-      width: 310px;
-      height: 660px;
-      padding: 0 50px;
-      background-size: cover;
+    &--left {
+      &::before {
+        left: -200px;
+      }
     }
+    
+    &--right {
+      &::before {
+        right: -200px;
+      }
+    }
+  }
+  &__image {
+    width: 310px;
+  }
 
-    &-price {}
-
-    &-description {}
+  &__number {
+    font: {
+      size: 60px;
+    }
+    &--left {
+      margin-right: 50px;
+      margin-top: 200px;
+    }
+    
+    &--right {
+      margin-top: 220px;
+    }
   }
 }
+
+// .promote-numbers {
+//   &--left {
+//     justify-content: flex-end;
+//     position: relative;
+//     margin-right: 50px;
+//     .promote-numbers{
+//       &__description {
+//         margin-left: 72px;
+    
+//         &-title {
+//           color: transparent;
+//           background-clip: text;
+//           background: $text-gradient;
+//           text-shadow: $text-shadow;
+//           -webkit-background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//           text-shadow: $text-shadow;
+//           font-size: 50px;
+//           margin-bottom: 20px;
+//           position: relative;
+    
+//           &::before {
+//             position: absolute;
+//             content: '';
+//             width: 70px;
+//             height: 3px;
+//             background-image: $text-gradient;
+//             bottom: 75px;
+//             left: 0px;
+//           }
+//         }
+    
+//         &-details {
+//           font-size: 30px;
+//           padding-top: 10px;
+//           font-family: 'Segoe UI';
+//           line-height: 40px;
+    
+//           &-light {
+//             font-weight: 300;
+    
+//           }
+    
+//           &-bold {
+//             font-weight: 700;
+//           }
+    
+//         }
+//       }
+//     }
+//   }
+// }

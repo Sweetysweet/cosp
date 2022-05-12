@@ -7,29 +7,34 @@
           >Earn</span
         >
       </div>
-      <div class="promote-numbers">
-        <div class="promote-numbers promote-numbers--left">
-          <span class="promote-numbers-price">5,99 $</span>
-          <div class="promote-numbers__description">
+      <div class="promote__body">
+        <div class="promote__number promote__number--left">
+          <span class="promote__number__price">5,99 $</span>
+          <div class="promote__image-handler promote__image-handler--left">
+            <div class="promote__image">
+              <img src="/images/promoted-1.png" alt="" srcset="">
+            </div>
+          </div>
+          <div class="promote__number__description">
             <span
               class="
-                promote-numbers__description-title
+                promote__number__description-title
               "
               >Monetization</span
             >
             <div
               class="
-                promote-numbers__description-details
+                promote__number__description-details
               "
             >
               <span
                 class="
-                  promote-numbers__description-details-light
+                  promote__number__description-details-light
                 "
                 >Create a
                 <span
                   class="
-                    promote-numbers__description-details-bold
+                    promote__number__description-details-bold
                   "
                   >feed with subscription-only content, the cost of a
                   subscription is entirely up to you.</span
@@ -41,29 +46,34 @@
             </div>
           </div>
         </div>
-        <div class="promote-numbers promote-numbers--right">
-          <span class="promote-numbers-price">+ 31,74 %</span>
-          <span class="promote-numbers-procent">CPC</span>
-          <div class="promote-numbers__description">
+        <div class="promote__number promote__number--right">
+          <span class="promote__number-price">+ 31,74 %</span>
+          <span class="promote__number-procent">CPC</span>
+          <div class="promote__image-handler promote__image-handler--left" >
+            <div class="promote__image">
+              <img src="/images/promoted-1.png" alt="" srcset="">
+            </div>
+          </div>
+          <div class="promote__number__description">
             <span
               class="
-                promote-numbers__description-title
+                promote__number__description-title
               "
               >Fewer touchpoints</span
             >
             <div
               class="
-                promote-numbers__description-details
+                promote__number__description-details
               "
             >
               <span
                 class="
-                  promote-numbers__description-details-light
+                  promote__number__description-details-light
                 "
                 >When you publish a post,
                 <span
                   class="
-                    promote-numbers__description-details-bold
+                    promote__number__description-details-bold
                   "
                   >put a price on a digital version of a photo or video for anyone who wants to buy it </span
                 >
