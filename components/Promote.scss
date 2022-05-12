@@ -1,19 +1,126 @@
 @import '../assets/abstract/vars.scss';
+
 .promote {
-    &__container {
-        margin: 0 auto;
-        transform: translateX(7px);
-    }
+  width: 100%;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
 }
 
 .promote-title {
-    text-align: center;
-    &__text {
-        font-size: 70px;
-        &--accent {
-            color: transparent;    
-            background-clip: text;
-            background-image: $bg-gradient
-        }
+  text-align: center;
+  transform: translateX(-3px);
+
+  &__text {
+    font-size: 70px;
+
+    &--accent {
+      color: transparent;
+      background-clip: text;
+      background-image: $bg-gradient;
+      text-shadow: $text-shadow;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+  }
+}
+
+.promote-numbers {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 533px;
+  position: relative;
+  max-width: 730px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('/images/promoted-1.png');
+    width: 310px;
+    height: 660px;
+    background-size: cover;
+    display: none;
+  }
+
+  &-price {
+    display: block;
+    font-size: 50px;
+    line-height: 0.035em;
+    font-family: 'Segoe UI';
+    margin-bottom: 324px;
+    position: relative;
+    left: 134px;
+    bottom: 9px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 70px;
+      height: 3px;
+      background-image: $text-gradient;
+      top: 45px;
+      left: -13px;
+    }
+  }
+
+  &__description {
+    margin-left: 72px;
+
+    &-title {
+      color: transparent;
+      background-clip: text;
+      background: $text-gradient;
+      text-shadow: $text-shadow;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: $text-shadow;
+      font-size: 50px;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 3px;
+        background-image: $text-gradient;
+        bottom: 75px;
+        left: 0px;
+      }
+    }
+
+    &-details {
+      font-size: 30px;
+      padding-top: 10px;
+      font-family: 'Segoe UI';
+      line-height: 40px;
+
+      &-light {
+        font-weight: 300;
+
+      }
+
+      &-bold {
+        font-weight: 700;
+      }
+
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('/images/promoted-1.png');
+    }
+
+    &-price {}
+
+    &-description {}
+  }
 }
