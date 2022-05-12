@@ -1,0 +1,19 @@
+@import '../assets/abstract/vars.scss';
+.promote {
+    &__container {
+        margin: 0 auto;
+        transform: translateX(7px);
+    }
+}
+
+.promote-title {
+    text-align: center;
+    &__text {
+        font-size: 70px;
+        &--accent {
+            color: transparent;    
+            background-clip: text;
+            background-image: $bg-gradient
+        }
+    }
+}
