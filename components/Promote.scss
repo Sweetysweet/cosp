@@ -7,19 +7,20 @@
 }
 
 .promote {
+  margin-left: -96px;
+
   &__title {
     text-align: center;
     margin-bottom: 50px;
-    color: transparent;
-    background-clip: text;
-    background: $text-gradient;
-    text-shadow: $text-shadow;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: $text-shadow;
+    // color: transparent;
+    // background-clip: text;
+    // background: $text-gradient;
+    // text-shadow: $text-shadow;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // text-shadow: $text-shadow;
     font-size: 50px;
     margin-bottom: 20px;
-    position: relative;
 
     &__text {
       font-size: 70px;
@@ -50,19 +51,7 @@
   }
 
   &__image-handler {
-    padding: 0 50px;
-
-    &--left {
-      &::before {
-        left: -200px;
-      }
-    }
-
-    &--right {
-      &::before {
-        right: -200px;
-      }
-    }
+    padding: 85px 14px 8px 110px;
   }
 
   &__image {
@@ -70,131 +59,93 @@
   }
 
   &__number {
-    font-size: 60px;
+    font-size: 50px;
     &--left {
-      margin-top: 200px;
-      padding-left: 30px;
+      margin-top: 482px;
+      padding-left: 230px;
+      .promote__number__price--left {
+        ::after {
+          left: 100px;
+        }
+      }
     }
 
     &--right {
-      margin-top: 220px;
+      margin-top: 413px;
+    }
+    &__price {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 3px;
+        background-image: $text-gradient;
+        top: 61px;
+      }
+      span {
+        background: $text-gradient;
+        text-shadow: $text-shadow;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: $text-shadow;
+        font-family: 'Manjari';
+      }
+      &--left::after{
+        left: -11px;
+      }
+      &--right::after {
+        left: 27px;
+      }
+    }
+    
+  }
+
+  &__description {
+    padding: 81px 0 0 165px;
+    &--right {
+      margin-left: -36px;
+      &>span {
+        margin-left: 222px;
+      }
+    } 
+    &-title {
+      color: transparent;
+      background-clip: text;
+      background: $text-gradient;
+      text-shadow: $text-shadow;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: $text-shadow;
+      font-size: 50px;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 3px;
+        background-image: $text-gradient;
+        bottom: 75px;
+        left: 0px;
+      }
+    }
+
+    &-details {
+      font-size: 30px;
+      padding-top: 10px;
+      font-family: 'Segoe UI';
+      line-height: 40px;
+
+      &-light {
+        font-weight: 300;
+
+      }
+
+      &-bold {
+        font-weight: 700;
+      }
     }
   }
 }
-
-// .promote {
-//   &__container {
-//     margin: auto auto;
-//     width: 100%;
-//     max-width: 1600px;
-//   }
-
-//   &-title {
-//     text-align: center;
-//     margin-bottom: 50px;
-//     
-//   }
-
-//   &__body {
-//     display: flex;
-//   }
-
-//   &__left, 
-//   &__right {
-//     width: 100%;
-//     max-width: 50%;
-//     display: flex;
-//   }
-
-//   &__left {
-//     justify-content: flex-end;
-//   }
-//   &__right {
-//     justify-content: flex-start;
-//   }
-//   &__image-handler {
-//     padding: 0 50px;
-//     position: relative;
-//     &--left {
-//       &::before {
-//         left: -200px;
-//       }
-//     }
-
-//     &--right {
-//       &::before {
-//         right: -200px;
-//       }
-//     }
-//   }
-//   &__image {
-//     width: 310px;
-//   }
-
-//   &__number {
-//     font: {
-//       size: 60px;
-//     }
-//     &--left {
-//       margin-right: 50px;
-//       margin-top: 200px;
-//     }
-
-//     &--right {
-//       margin-top: 220px;
-//     }
-//   }
-// }
-
-// .promote-numbers {
-//   &--left {
-//     justify-content: flex-end;
-//     position: relative;
-//     margin-right: 50px;
-//     .promote-numbers{
-//       &__description {
-//         margin-left: 72px;
-
-//         &-title {
-//           color: transparent;
-//           background-clip: text;
-//           background: $text-gradient;
-//           text-shadow: $text-shadow;
-//           -webkit-background-clip: text;
-//           -webkit-text-fill-color: transparent;
-//           text-shadow: $text-shadow;
-//           font-size: 50px;
-//           margin-bottom: 20px;
-//           position: relative;
-
-//           &::before {
-//             position: absolute;
-//             content: '';
-//             width: 70px;
-//             height: 3px;
-//             background-image: $text-gradient;
-//             bottom: 75px;
-//             left: 0px;
-//           }
-//         }
-
-//         &-details {
-//           font-size: 30px;
-//           padding-top: 10px;
-//           font-family: 'Segoe UI';
-//           line-height: 40px;
-
-//           &-light {
-//             font-weight: 300;
-
-//           }
-
-//           &-bold {
-//             font-weight: 700;
-//           }
-
-//         }
-//       }
-//     }
-//   }
-// }

@@ -2,33 +2,43 @@
   <section class="promote__container">
     <div class="promote">
       <div class="promote__title">
-        <span class="promote-title__text">Opinion Leader? Promote. </span>
-        <span class="promote-title__text promote-title__text--accent"
+        <span class="promote__title__text">Opinion Leader? Promote. </span>
+        <span class="promote__title__text promote__title__text--accent"
           >Earn</span
         >
       </div>
       <div class="promote__row">
         <div class="promote__left promote__col">
           <div class="promote__number promote__number--left">
-            <span class="promote__number__price">5,99 $</span>
-            <div class="promote__image-handler promote__image-handler--left">
-                <img class="promote__image" src="/images/promoted-1.png" alt="" srcset="" />
-            </div>
+            <span class="promote__number__price promote__number__price--left">5,99 <span>$</span></span>
+          </div>
+          <div class="promote__image-handler promote__image-handler--left">
+            <img
+              class="promote__image"
+              src="/images/promoted-1.png"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
 
         <div class="promote__right promote__col">
+          <div class="promote__image-handler promote__image-handler--right">
+            <img
+              class="promote__image"
+              src="/images/promoted-1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
           <div class="promote__number promote__number--right">
-            <span class="promote__number-price">+ 31,74 % CPC</span>
-            <div class="promote__image-handler promote__image-handler--right">
-                <img class="promote__image" src="/images/promoted-1.png" alt="" srcset="" />
-            </div>
+            <span class="promote__number__price promote__number__price--right">+ 31,74 <span>% CPC</span></span>
           </div>
         </div>
       </div>
       <div class="promote__row">
         <div class="promote__col">
-          <div class="promote__description">
+          <div class="promote__description promote__description--left">
             <span class="promote__description-title">Monetization</span>
             <div class="promote__description-details">
               <span class="promote__description-details-light"
@@ -44,10 +54,8 @@
           </div>
         </div>
         <div class="promote__col">
-          <div class="promote__description">
-            <span class="promote__description-title"
-              >Fewer touchpoints</span
-            >
+          <div class="promote__description promote__description--right">
+            <span class="promote__description-title">Fewer touchpoints</span>
             <div class="promote__description-details">
               <span class="promote__description-details-light"
                 >When you publish a post,
