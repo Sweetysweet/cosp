@@ -88,8 +88,11 @@
           </div>
         </div>
         <div class="promote__col">
-          <div class="promote__access-description">
-            
+          <div class="promote__access-description--top">
+            <span>l</span>
+          </div>
+          <div class="promote__access-description--bottom">
+            <span>m</span>
           </div>
         </div>
       </div>
