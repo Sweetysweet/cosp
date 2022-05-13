@@ -71,6 +71,28 @@
           </div>
         </div>
       </div>
+      <div class="promote__row">
+        <div class="promote__col">
+          <div class="promote__access">
+            <span class="promote__access-title">
+              Easy to Access
+            </span>
+            <div class="promote__image-handler promote__image-handler--left">
+              <img
+                class="promote__image"
+                src="/images/promoted-1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="promote__col">
+          <div class="promote__access-description">
+            
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
