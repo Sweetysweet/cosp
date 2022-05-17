@@ -1,0 +1,56 @@
+@import '../assets/abstract/vars.scss';
+.synchrone {
+    &__container {
+       margin: auto auto;
+       width: 100%;
+       max-width: 1600px; 
+       margin-bottom: 336px;
+    }
+    &__title {
+        max-width: 1260px;
+        margin-left: 220px;
+        margin-bottom: 20px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 269px;
+            height: 3px;
+            background-image: $text-gradient;
+            left: -99px;
+            top: -102px;
+            text-shadow: $text-shadow;
+          }
+        &-text {
+            font-size: 80px;
+            font-family: 'Segoe UI';
+            line-height: 106px;
+            display: block;
+            line-height: 106px;
+            &--second {
+                margin-top: 23px;
+            }
+            &--third {
+                margin-top: 10px;
+            }
+            &--accent {
+                text-transform: uppercase;
+                color: $mint;
+                text-shadow: $text-shadow;
+            }
+        }
+    }
+    &-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 57px;
+        &__link {
+            display: block;
+            &--left {
+                margin-left: 92px;
+                margin-right: 46px;
+            }
+        }
+    }
+}

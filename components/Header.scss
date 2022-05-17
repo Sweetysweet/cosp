@@ -39,11 +39,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .btn-login {
-    position: absolute;
     width: calc(100% - 2px * 2);
     height: calc(100% - 2px * 2);
     background-color: $black;

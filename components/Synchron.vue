@@ -1,0 +1,168 @@
+<template>
+  <section class="synchrone__container">
+    <div class="syncrone__content">
+      <div class="synchrone__title">
+        <span class="synchrone__title-text synchrone__title-text--first"
+          >All processes</span
+        >
+        <span class="synchrone__title-text synchrone__title-text--second"
+          >are synchronized</span
+        >
+        <span class="synchrone__title-text synchrone__title-text--third"
+          >with the main
+          <span class="synchrone__title-text--accent">Incosplay </span
+          >platform</span
+        >
+      </div>
+      <div class="synchrone-download">
+        
+        <a
+          href="https://apps.apple.com/app/id1473016754"
+          target="blank"
+          class="synchrone-download__link synchrone-download__link--left"
+        >
+          <svg
+            width="150"
+            height="150"
+            viewBox="0 0 150 150"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_225_44)">
+              <path
+                d="M70.9819 46.4859L72.6331 43.6371C73.6492 41.8589 75.9173 41.2601 77.6956 42.2762C79.4738 43.2923 80.0726 45.5605 79.0565 47.3387L63.1794 74.8286H74.6653C78.3851 74.8286 80.4718 79.2016 78.8569 82.2319H45.1976C43.1472 82.2319 41.496 80.5806 41.496 78.5302C41.496 76.4798 43.1472 74.8286 45.1976 74.8286H54.6331L66.7177 53.8891L62.9436 47.3387C61.9274 45.5605 62.5262 43.3105 64.3044 42.2762C66.0827 41.2601 68.3327 41.8589 69.3669 43.6371L70.9819 46.4859ZM56.7016 86.0423L53.1452 92.2117C52.129 93.9899 49.8609 94.5887 48.0827 93.5726C46.3044 92.5564 45.7056 90.2883 46.7218 88.5101L49.371 83.9375C52.3468 83.0121 54.7782 83.7198 56.7016 86.0423ZM87.3488 74.8468H96.9839C99.0343 74.8468 100.685 76.498 100.685 78.5484C100.685 80.5988 99.0343 82.25 96.9839 82.25H91.6311L95.2419 88.5101C96.2581 90.2883 95.6593 92.5383 93.8811 93.5726C92.1028 94.5887 89.8528 93.9899 88.8186 92.2117C82.7399 81.6694 78.1673 73.7762 75.1371 68.5141C72.0343 63.1613 74.248 57.7903 76.4436 55.9758C78.875 60.1492 82.504 66.4456 87.3488 74.8468ZM71 26C46.1411 26 26 46.1411 26 71C26 95.8589 46.1411 116 71 116C95.8589 116 116 95.8589 116 71C116 46.1411 95.8589 26 71 26ZM110.194 71C110.194 92.5383 92.7561 110.194 71 110.194C49.4617 110.194 31.8065 92.7561 31.8065 71C31.8065 49.4617 49.244 31.8065 71 31.8065C92.5383 31.8065 110.194 49.244 110.194 71Z"
+                fill="url(#paint0_linear_225_44)"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_225_44"
+                x="0"
+                y="0"
+                width="150"
+                height="150"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="4" dy="4" />
+                <feGaussianBlur stdDeviation="15" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.741176 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_225_44"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_225_44"
+                  result="shape"
+                />
+              </filter>
+              <linearGradient
+                id="paint0_linear_225_44"
+                x1="87.3491"
+                y1="-18.1509"
+                x2="182.223"
+                y2="57.2248"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0.286458" stop-color="#93EFD9" />
+                <stop offset="1" stop-color="#ED93EF" />
+                <stop offset="1" stop-color="#ED93EF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+        <a
+          href="https://apps.apple.com/app/id1473016754"
+          target="blank"
+          class="synchrone-download__link synchrone-download__link--right"
+        >
+          <svg
+            width="140"
+            height="150"
+            viewBox="0 0 140 150"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_225_43)">
+              <path
+                d="M78.0096 67.1936L39.7479 28.2856L88.4288 56.6271L78.0096 67.1936ZM29.762 26C27.5083 27.1955 26 29.3757 26 32.2063V109.794C26 112.624 27.5083 114.804 29.762 116L74.2475 70.9912L29.762 26ZM103.477 65.664L93.2657 59.6687L81.8756 71.0088L93.2657 82.3489L103.685 76.3536C106.806 73.8394 106.806 68.1782 103.477 65.664ZM39.7479 113.732L88.4288 85.3905L78.0096 74.824L39.7479 113.732Z"
+                fill="url(#paint0_linear_225_43)"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_225_43"
+                x="0"
+                y="0"
+                width="140"
+                height="150"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="4" dy="4" />
+                <feGaussianBlur stdDeviation="15" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.741176 0 0 0 0 0 0 0 0 0 1 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_225_43"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_225_43"
+                  result="shape"
+                />
+              </filter>
+              <linearGradient
+                id="paint0_linear_225_43"
+                x1="80.5325"
+                y1="-18.1509"
+                x2="172.319"
+                y2="46.6695"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0.286458" stop-color="#93EFD9" />
+                <stop offset="1" stop-color="#ED93EF" />
+                <stop offset="1" stop-color="#ED93EF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
+<script>
+export default {
+  name: "Synchron",
+};
+</script>
+<style lang="scss">
+@import "./Synchron";
+</style>
