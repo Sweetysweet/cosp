@@ -10,7 +10,9 @@
       <div class="promote__row">
         <div class="promote__left promote__col">
           <div class="promote__number promote__number--left">
-            <span class="promote__number__price promote__number__price--left">5,99 <span>$</span></span>
+            <span class="promote__number__price promote__number__price--left"
+              >5,99 <span>$</span></span
+            >
           </div>
           <div class="promote__image-handler promote__image-handler--left">
             <img
@@ -32,7 +34,9 @@
             />
           </div>
           <div class="promote__number promote__number--right">
-            <span class="promote__number__price promote__number__price--right">+ 31,74 <span>% CPC</span></span>
+            <span class="promote__number__price promote__number__price--right"
+              >+ 31,74 <span>% CPC</span></span
+            >
           </div>
         </div>
       </div>
@@ -72,12 +76,12 @@
         </div>
       </div>
       <div class="promote__row">
-        <div class="promote__col">
-          <div class="promote__access">
-            <span class="promote__access-title">
-              Easy to Access
-            </span>
-            <div class="promote__image-handler promote__image-handler--left">
+        <div class="promote__col promote-access">
+          <div class="promote-access">
+            <span class="promote-access__title"> Easy to <span class="promote-access__title promote-access__title--accent">Access</span></span>
+            <div
+              class="promote__image-handler promote-access__image-handler--left"
+            >
               <img
                 class="promote__image"
                 src="/images/promoted-1.png"
@@ -87,12 +91,46 @@
             </div>
           </div>
         </div>
-        <div class="promote__col">
-          <div class="promote__access-description--top">
-            <span>l</span>
+        <div class="promote__col promote-access promote-access--right">
+          <div class="promote-access__description">
+            <span class="promote-access__description-title"
+              >Buy and sell without going beyond Incosplay</span
+            >
+            <div class="promote-access__description-details">
+              <span class="promote-access__description-details-light"
+                >An assortment of exclusively cosplay products and services.
+                <span class="promote-access__description-details-bold"
+                  >A special filter to search for products</span
+                >
+                by cosplay characteristics. High-rating sellers pay half the
+                commissions. Tight integration with all ecosystem
+                services.</span
+              >
+            </div>
           </div>
-          <div class="promote__access-description--bottom">
-            <span>m</span>
+          <div
+            class="
+              promote-access__description promote-access__description--bottom
+            "
+          >
+            <span class="promote-access__description-title"
+              >Easily promote products and your store</span
+            >
+            <div class="promote-access__description-details">
+              <span class="promote-access__description-details-light"
+                ><span class="promote-access__description-details-light promote-access__description-details-light--accent">Incosplay</span> offers its own targeted advertising engine.
+                <span class="promote-access__description-details-bold"
+                  >Pay only for a user's actual participation in an ad.</span
+                >
+                AI algorithms are constantly learning to maximize CPM for
+                advertisers. Determine who your customer is and promote in all
+                <span class="promote-access__description-details-light promote-access__description-details-light--accent">Incosplay</span> services at once:</span
+              >
+              <span class="promote-access__description-details-bold"
+                >Social networks, marketplaces, streaming platforms, AR, VR,
+                Metaworld.</span
+              >
+            </div>
           </div>
         </div>
       </div>

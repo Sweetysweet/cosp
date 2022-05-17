@@ -24,6 +24,7 @@
 
     &__text {
       font-size: 70px;
+
       &--accent {
         color: transparent;
         background-clip: text;
@@ -60,9 +61,11 @@
 
   &__number {
     font-size: 50px;
+
     &--left {
       margin-top: 482px;
       padding-left: 230px;
+
       .promote__number__price--left {
         ::after {
           left: 100px;
@@ -73,8 +76,10 @@
     &--right {
       margin-top: 413px;
     }
+
     &__price {
       position: relative;
+
       &::after {
         position: absolute;
         content: '';
@@ -83,6 +88,7 @@
         background-image: $text-gradient;
         top: 61px;
       }
+
       span {
         background: $text-gradient;
         text-shadow: $text-shadow;
@@ -91,24 +97,29 @@
         text-shadow: $text-shadow;
         font-family: 'Manjari';
       }
-      &--left::after{
+
+      &--left::after {
         left: -11px;
       }
+
       &--right::after {
         left: 27px;
       }
     }
-    
+
   }
 
   &__description {
     padding: 81px 0 0 165px;
+
     &--right {
       margin-left: -36px;
+
       &>span {
         margin-left: 222px;
       }
-    } 
+    }
+
     &-title {
       color: transparent;
       background-clip: text;
@@ -140,7 +151,6 @@
 
       &-light {
         font-weight: 300;
-
       }
 
       &-bold {
@@ -149,7 +159,89 @@
     }
   }
 
-  &__access{
-    
+  &-access {
+    margin-top: 148px;
+    margin-left: 83px;
+
+    &--right {
+      width: 539px;
+      margin-top: 296px;
+      margin-left: 43px;
+    }
+
+    &__title {
+      font-size: 70px;
+      &--accent {
+        color: transparent;
+      background-clip: text;
+      background: $text-gradient;
+      text-shadow: $text-shadow;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: $text-shadow;
+      }
+    }
+
+    &__image-handler--left {
+      margin-top: 103px;
+      margin-left: -54px
+    }
+
+    &__description {
+      margin-top: 207px;
+
+      &-title {
+        display: block;
+        max-width: 545px;
+        padding-bottom: 19px;
+        line-height: 50px;
+        font-size: 50px;
+        color: transparent;
+        background-clip: text;
+        background: $text-gradient;
+        text-shadow: $text-shadow;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: $text-shadow;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 70px;
+          height: 3px;
+          background-image: $text-gradient;
+          left: 2px;
+          top: -24px;
+          text-shadow: $text-shadow;
+        }
+      }
+
+      &-details {
+        padding-top: 20px;
+        font-size: 30px;
+        padding-top: 10px;
+        font-family: "Segoe UI";
+        line-height: 40px;
+        max-width: 682px;
+
+        &-light {
+          font-weight: 300;
+          &--accent {
+            text-transform: uppercase;
+            color: $mint;
+            text-shadow: $text-shadow;
+          }
+        }
+        &-bold {
+          font-weight: 700;
+        }
+      }
+      &--bottom {
+        margin-top: 170px;
+        margin-left: -135px;
+        width: 683px;
+      }
+    }
   }
 }
