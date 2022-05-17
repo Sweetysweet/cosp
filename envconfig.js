@@ -1,0 +1,6 @@
+let AXIOS_BASE_URL = process.env.AXIOS_BASE_URL
+let GOOGLE_ANALYTICS = process.env.GOOGLE_ANALYTICS
+export {
+    AXIOS_BASE_URL,
+    GOOGLE_ANALYTICS
+}
