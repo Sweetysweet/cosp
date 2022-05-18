@@ -1,0 +1,41 @@
+.footer {
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-left: 115px;
+    &__social {
+        display: flex;
+        &-email {
+            margin-right: 111px;
+            span {
+                display: block;
+                letter-spacing: 0.04em;
+                font-family: 'Segoe UI';
+                font-size: 20px;
+            }
+        }
+        &-media {
+            display: flex;
+            flex-direction: column;
+            margin-top: -15px;
+            span {
+                font-size: 20px;
+                font-family: 'Segoe UI';
+                letter-spacing: 0.04em;
+            }
+        }
+        
+    }
+    &__copyright {
+        margin-left: 102px;
+        margin-top: 12px;
+        span {
+            font-size: 20px;
+            letter-spacing: 0.04em;
+            font-family: 'Segoe UI';
+        }
+        &-text {
+            margin-right: 82px;
+        }
+    }
+}
