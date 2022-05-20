@@ -101,6 +101,11 @@
     }
   }
 
+  &__form-error {
+    display: block;
+    margin: 10px 0 0 10px;
+  }
+
   &-block {
     padding: 0 111px 0 34px;
   }
