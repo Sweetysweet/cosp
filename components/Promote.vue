@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="promote__col">
-          <div class="promote__description promote__description--right">
+          <div class="promote__description promote__description--right mobile-hidden">
             <span class="promote__description-title">Fewer touchpoints</span>
             <div class="promote__description-details">
               <span class="promote__description-details-light"
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="promote__row">
-        <div class="promote__col promote-access">
+        <div class="promote__col promote-access mobile-hidden">
           <div class="promote-access">
             <span class="promote-access__title"> Easy to <span class="promote-access__title promote-access__title--accent">Access</span></span>
             <div
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="promote__col promote-access promote-access--right">
-          <div class="promote-access__description">
+          <div class="promote-access__description mobile-hidden">
             <span class="promote-access__description-title"
               >Buy and sell without going beyond Incosplay</span
             >

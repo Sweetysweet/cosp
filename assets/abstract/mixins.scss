@@ -1,0 +1,17 @@
+@mixin md() {
+    @media(min-width: 768px) {
+      @content
+    }
+  };
+  
+  @mixin lg() {
+    @media(min-width: 991px) {
+      @content
+    }
+  };
+  
+  @mixin from-xs-to-lg() {
+    @media (min-width: 0px) and (max-width: 991px) {
+      @content;
+    }
+  }

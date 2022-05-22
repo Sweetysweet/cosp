@@ -1,10 +1,23 @@
 @import '../assets/abstract/vars.scss';
+@import '../assets/abstract/mixins.scss';
+
 .description {
+    @include from-xs-to-lg() {
+        display: none;
+    }
+
     margin-bottom: 303px;
     &__container {
         display: flex;
         justify-content: center;
         flex-direction: column;
+
+        @include from-xs-to-lg() {
+            padding: {
+              left: 40px;
+              right: 40px;
+            }
+          }
     }
     &-title {
         text-align: center;
@@ -22,7 +35,10 @@
     &-subtitle {
         width: 946px;
         margin: 0 auto;
-        line-height: 40px;
+
+        @include lg() {
+            line-height: 40px;
+        }
         &-text {
             letter-spacing: 0.1em;
             &--more {

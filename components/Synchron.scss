@@ -1,14 +1,30 @@
 @import '../assets/abstract/vars.scss';
+@import '../assets/abstract/mixins.scss';
+
 .synchrone {
     &__container {
        margin: auto auto;
        width: 100%;
        max-width: 1600px; 
-       margin-bottom: 336px;
+       margin-bottom: 50px;
+
+       @include from-xs-to-lg() {
+           padding: {
+               left: 40px;
+               right: 40px;
+           }
+       }
+
+       @include lg() {
+           margin-bottom: 336px;
+       }
     }
+
     &__title {
+        @include lg() {
+            margin-left: 220px;
+        }
         max-width: 1260px;
-        margin-left: 220px;
         margin-bottom: 20px;
         position: relative;
         &::before {
@@ -17,22 +33,32 @@
             width: 269px;
             height: 3px;
             background-image: $text-gradient;
-            left: -99px;
+            left: 0;
             top: -102px;
             text-shadow: $text-shadow;
+
+            @include lg() {
+                left: -99px;
+            }
           }
         &-text {
-            font-size: 80px;
+            @include lg() {
+                font-size: 80px;
+                line-height: 106px;
+            }
+
+            font-size: 30px;
             font-family: 'Segoe UI';
-            line-height: 106px;
             display: block;
-            line-height: 106px;
-            &--second {
-                margin-top: 23px;
+            @include lg() {
+                &--second {
+                    margin-top: 23px;
+                }
+                &--third {
+                    margin-top: 10px;
+                }
             }
-            &--third {
-                margin-top: 10px;
-            }
+
             &--accent {
                 text-transform: uppercase;
                 color: $mint;
@@ -48,8 +74,17 @@
         &__link {
             display: block;
             &--left {
-                margin-left: 92px;
-                margin-right: 46px;
+                @include lg() {
+                    margin-left: 92px;
+                    margin-right: 46px;
+                }
+            }
+
+            @include from-xs-to-lg() {
+                svg {
+                    width: 67px;
+                    height: 67px;
+                }
             }
         }
     }

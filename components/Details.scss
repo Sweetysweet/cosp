@@ -1,4 +1,5 @@
 @import '../assets/abstract/vars.scss';
+@import '../assets/abstract/mixins.scss';
 
 .details {
   margin-bottom: 100px;
@@ -6,6 +7,13 @@
     position: relative;
     margin: 0 auto;
     max-width: 1600px;
+
+    @include from-xs-to-lg() {
+      padding: {
+        left: 40px;
+        right: 40px;
+      }
+    }
   }
 }
 
@@ -15,6 +23,10 @@
     max-width: 715px;
 
     &::before {
+      @include from-xs-to-lg() {
+        display: none;
+      }
+
       content: "";
       position: absolute;
       background-image: url('/images/details-1.png');
@@ -26,11 +38,17 @@
 
     &:nth-child(odd) {
       margin-left: auto;
-      margin-bottom: 792px;
+
+      @include lg() {
+        margin-bottom: 792px;
+      }
+      margin-bottom: 140px;
     }
 
     &:nth-child(even) {
-      margin-left: 66px;
+      @include lg() {
+        margin-left: 66px;
+      }
       margin-bottom: 200px;
       &::before {
         background-image: url('/images/details-2.png');
@@ -55,18 +73,31 @@
     }
 
     &:last-child {
-      margin-bottom: 635px;
+      margin-bottom: 140px;
+      
+      @include lg() {
+        margin-bottom: 635px;
+      }
+
       .imagine-block__text-inner {
         &::before {
-          left: 196px;
+          left: 0;
           top: -25px;
+
+          @include lg() {
+            left: 196px;
+          }
         }
       }
+
       .imagine-block__text-inner-part--title,
       .imagine-block__text-inner-part--subtitle {
         display: block;
-        margin-left: -57px;
-        margin-top: -7px;
+
+        @include lg() {
+          margin-left: -57px;
+          margin-top: -7px;
+        }
       }
       &::before {
         background-image: url('/images/details-3.png');
@@ -83,34 +114,56 @@
       position: absolute;
       width: 69px;
       height: 3px;
-      left: 256px;
-      background-image: $bg-gradient;
+      left: 0;
+      background-image: $text-gradient;
       text-shadow: $text-shadow;
       top: -23px;
+
+      @include lg() {
+        left: 256px;
+      }
     }
 
     &-inner-part {
-      padding-left: 253px;
+      @include lg() {
+        padding-left: 253px;
+      }
+
+      @include from-xs-to-lg() {
+        display: block;
+      }
 
       &--title,
       &--subtitle {
-        font-size: 50px;
-        line-height: 55px;
+        font-size: 30px;
+        line-height: 32px;
         color: transparent;
         background-clip: text;
-        background-image: $bg-gradient;
+        background-image: $text-gradient;
         text-shadow: $text-shadow;
+        
+        @include lg() {
+          line-height: 55px;
+          font-size: 50px;
+        }
       }
     }
 
     &-description {
       padding-left: 6px;
-      width: 700px;
+
+      @include lg() {
+        width: 700px;
+      }
 
       &-inner {
         font-family: 'Segoe UI';
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 20px;
+        
+        @include lg() {
+          line-height: 40px;
+          font-size: 30px;
+        }
 
         &--light {
           font-weight: 100;

@@ -12,7 +12,7 @@
             </div>
              <div class="footer__copyright">
                 <span class="footer__copyright-text">COPYRIGHT © 2022. ALL RIGHTS RESERVED INCOSPLAY INC</span>
-                <span class="footer__copyright-address">Incosplay Inc, 8 The Green, STE A, Dover, DE, USA 19901</span>
+                <span class="footer__copyright-address mobile-hidden">Incosplay Inc, 8 The Green, STE A, Dover, DE, USA 19901</span>
             </div>
         </div>
        

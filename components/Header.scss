@@ -1,9 +1,20 @@
 @import '../assets/abstract/vars.scss';
+@import '../assets/abstract/mixins.scss';
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 85px 80px 0px 83px
+
+    padding: 40px 0 0 0;
+    
+    @include lg() {
+        padding: 40px 80px 0px 83px;
+    }
+
+    @include from-xs-to-lg() {
+        justify-content: center;
+    }
 }
 .logo {
     position: relative;
@@ -18,6 +29,10 @@ header {
     }
 }
 .nav-links__items {
+    @include from-xs-to-lg() {
+        display: none;
+    }
+    
     display: flex;
     justify-content: space-between;
     .nav-links__item {
@@ -32,6 +47,10 @@ header {
 }
 
 .button__container {
+    @include from-xs-to-lg() {
+        display: none;
+    }
+    
     width: 180px;
     height: 40px;
     border-radius: 5px;

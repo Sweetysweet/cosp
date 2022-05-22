@@ -1,11 +1,28 @@
+@import '../assets/abstract/mixins.scss';
+
 .footer {
     margin: auto auto;
     width: 100%;
     margin-bottom: 60px;
-    margin-left: 115px;
+
+    @include from-xs-to-lg() {
+        padding: {
+            left: 40px;
+            right: 40px;
+        }
+    }
+
+    @include lg() {
+        margin-left: 115px;
+    }
+
     &__social {
         display: flex;
         &-email {
+            @include from-xs-to-lg() {
+                display: none;
+            }
+
             margin-right: 111px;
             span {
                 display: block;
@@ -15,6 +32,10 @@
             }
         }
         &-media {
+            @include from-xs-to-lg() {
+                display: none;
+            }
+
             display: flex;
             flex-direction: column;
             margin-top: -15px;
@@ -27,15 +48,22 @@
         
     }
     &__copyright {
-        margin-left: 102px;
+        @include lg() {
+            margin-left: 102px;
+        }
         margin-top: 12px;
         span {
-            font-size: 20px;
+            @include lg() {
+                font-size: 20px;
+            }
+            font-size: 10px;
             letter-spacing: 0.04em;
             font-family: 'Segoe UI';
         }
         &-text {
-            margin-right: 82px;
+            @include lg() {
+                margin-right: 82px;
+            }
         }
     }
 }

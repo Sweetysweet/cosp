@@ -1,20 +1,40 @@
 @import '../assets/abstract/vars.scss';
+@import '../assets/abstract/mixins.scss';
 
 .promote__container {
   margin: auto auto;
   width: 100%;
   max-width: 1600px;
+
+  @include from-xs-to-lg() {
+    padding: {
+      left: 40px;
+      right: 40px;
+    }
+  }
 }
 
 .promote {
-  margin-left: -96px;
-  margin-bottom: 485px;
+  @include lg() {
+    margin-left: -96px;
+    margin-bottom: 485px;
+  }
+
+  margin-bottom: 140px;
 
   &__title {
     text-align: center;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 20px;
+
+    @include from-xs-to-lg() {
+      display: none;
+    }
+
+    @include lg() {
+      font-size: 50px;
+    }
 
     &__text {
       font-size: 70px;
@@ -31,12 +51,17 @@
   }
 
   &__row {
-    display: flex;
+    @include lg() {
+      display: flex;
+    }
   }
 
   &__col {
     width: 100%;
-    max-width: 50%;
+
+    @include lg() {
+      max-width: 50%;
+    }
   }
 
   &__left,
@@ -46,6 +71,9 @@
   }
 
   &__image-handler {
+    @include from-xs-to-lg() {
+      display: none;
+    }
     padding: 85px 14px 8px 110px;
   }
 
@@ -54,6 +82,10 @@
   }
 
   &__number {
+    @include from-xs-to-lg() {
+      display: none;
+    }
+
     font-size: 50px;
 
     &--left {
@@ -104,13 +136,21 @@
   }
 
   &__description {
-    padding: 81px 0 0 165px;
-
-    &--right {
-      margin-left: -36px;
-
-      &>span {
-        margin-left: 222px;
+    @include from-xs-to-lg() {
+      &--left {
+        margin-bottom: 140px;
+      }      
+    }
+    
+    @include lg() {
+      padding: 81px 0 0 165px;
+      
+      &--right {
+        margin-left: -36px;
+  
+        &>span {
+          margin-left: 222px;
+        }
       }
     }
 
@@ -122,9 +162,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-shadow: $text-shadow;
-      font-size: 50px;
       margin-bottom: 20px;
+      font-size: 30px;
       position: relative;
+      
+      @include lg() {
+        font-size: 50px;
+      }
 
       &::before {
         position: absolute;
@@ -138,10 +182,14 @@
     }
 
     &-details {
-      font-size: 30px;
       padding-top: 10px;
+      font-size: 20px;
       font-family: 'Segoe UI';
-      line-height: 40px;
+      
+      @include lg() {
+        font-size: 30px;
+        line-height: 40px;
+      }
 
       &-light {
         font-weight: 300;
@@ -158,38 +206,48 @@
     margin-left: 83px;
 
     &--right {
-      width: 539px;
-      margin-top: 296px;
-      margin-left: 43px;
+      @include lg() {
+        width: 539px;
+        margin-top: 296px;
+        margin-left: 43px;
+      }
+      margin-left: 0;
+      margin-top: 140px;
     }
 
     &__title {
       font-size: 70px;
+
       &--accent {
         color: transparent;
-      background-clip: text;
-      background: $text-gradient;
-      text-shadow: $text-shadow;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: $text-shadow;
+        background-clip: text;
+        background: $text-gradient;
+        text-shadow: $text-shadow;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: $text-shadow;
       }
     }
 
     &__image-handler--left {
       margin-top: 103px;
-      margin-left: -54px
+
+      @include lg() {
+        margin-left: -54px
+      }
     }
 
     &__description {
-      margin-top: 207px;
+      @include lg() {
+        margin-top: 207px;
+      }
 
       &-title {
         display: block;
         max-width: 545px;
         padding-bottom: 19px;
-        line-height: 50px;
-        font-size: 50px;
+        line-height: 32px;
+        font-size: 30px;
         color: transparent;
         background-clip: text;
         background: $text-gradient;
@@ -198,6 +256,11 @@
         -webkit-text-fill-color: transparent;
         text-shadow: $text-shadow;
         position: relative;
+
+        @include lg() {
+          font-size: 50px;
+          line-height: 55px;
+        }
 
         &::before {
           position: absolute;
@@ -212,11 +275,15 @@
       }
 
       &-details {
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 10px;
         font-family: "Segoe UI";
-        line-height: 40px;
         max-width: 682px;
+
+        @include lg() {
+          font-size: 30px;
+          line-height: 40px;
+        }
 
         &-light {
           font-weight: 300;
@@ -232,8 +299,11 @@
       }
       &--bottom {
         margin-top: 114px;
-        margin-left: -137px;
-        width: 683px;
+
+        @include lg() {
+          margin-left: -137px;
+          width: 683px;
+        }
       }
     }
   }

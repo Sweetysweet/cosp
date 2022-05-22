@@ -1,5 +1,5 @@
 <template>
-  <section class="contact__container">
+  <section class="contact__container mobile-hidden">
     <div class="contact__title">
       <span class="contact__title-text">incosplay</span>
     </div>

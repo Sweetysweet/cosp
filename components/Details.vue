@@ -46,7 +46,7 @@
           </p>
         </div>
       </div>
-      <div class="imagine-block__text">
+      <div class="imagine-block__text mobile-hidden">
         <div class="imagine-block__text-inner">
           <span
             class="
