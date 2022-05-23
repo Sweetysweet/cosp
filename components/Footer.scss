@@ -18,40 +18,47 @@
 
     &__social {
         display: flex;
-        &-email {
-            @include from-xs-to-lg() {
-                display: none;
-            }
-
-            margin-right: 111px;
-            span {
-                display: block;
-                letter-spacing: 0.04em;
-                font-family: 'Segoe UI';
-                font-size: 20px;
-            }
-        }
+        justify-content: space-between;
         &-media {
             @include from-xs-to-lg() {
                 display: none;
             }
 
             display: flex;
-            flex-direction: column;
-            margin-top: -15px;
-            span {
+            align-items: center;
+            span, a {
                 font-size: 20px;
                 font-family: 'Segoe UI';
                 letter-spacing: 0.04em;
+                margin-right: 10px;
+            }
+        }
+        
+    }
+    &__policy {
+        display: flex;
+        a {
+            font-size:  20px;
+            letter-spacing: 0.04em;
+            font-family: 'Segoe UI';
+        }
+        
+        &-policy {
+            margin-right: 20px;
+            @include from-xs-to-lg() {
+                font-size: 15px;
+                margin-bottom: 20px;
             }
         }
         
     }
     &__copyright {
-        @include lg() {
-            margin-left: 102px;
+        @include from-xs-to-lg() {
+            display: none;
         }
-        margin-top: 12px;
+        @include lg() {
+            margin-left: 31px;
+        }
         span {
             @include lg() {
                 font-size: 20px;
@@ -64,6 +71,14 @@
             @include lg() {
                 margin-right: 82px;
             }
+        }
+    }
+    .mobile {
+        @include lg() {
+            display: none;
+        }
+        @include from-xs-to-lg() {
+            display: block;
         }
     }
 }

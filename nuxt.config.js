@@ -3,7 +3,7 @@ import { AXIOS_BASE_URL, GOOGLE_ANALYTICS } from './envconfig'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'incosplay-landing',
+    title: 'Incosplay - Cosplay & Marketplace ',
     htmlAttrs: {
       lang: 'en'
     },
