@@ -7,7 +7,7 @@
                 <span>AngelList</span>
             </div>
             <div class="footer__policy">
-                <a class="footer__policy-policy" href="https://incosplay.top/privacy_policy/en/">privacy policy</a>
+                <a class="footer__policy-policy" href="https://incosplay.top/privacy_policy/en/">Privacy policy</a>
                 <a class="footer__policy-agreement" href="https://incosplay.top/user_agreement/en/">User agreement</a>
             </div>
             <div class="footer__copyright">
