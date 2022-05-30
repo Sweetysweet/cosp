@@ -128,7 +128,7 @@
               >
               <span class="promote-access__description-details-bold"
                 >Social networks, marketplaces, streaming platforms, AR, VR,
-                Metaworld.</span
+                Metaverse.</span
               >
             </div>
           </div>
