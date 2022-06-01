@@ -40,12 +40,11 @@
       font-size: 70px;
 
       &--accent {
-        color: transparent;
-        background-clip: text;
-        background-image: $bg-gradient;
+        background: $text-gradient;
         text-shadow: $text-shadow;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-shadow: $text-shadow;
       }
     }
   }

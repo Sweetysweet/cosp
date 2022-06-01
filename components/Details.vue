@@ -1,5 +1,5 @@
 <template>
-  <section class="details">
+  <section class="details" id="users">
     <div class="details__container">
       <div class="imagine-block__text">
         <div class="imagine-block__text-inner">
@@ -59,6 +59,7 @@
             class="
               imagine-block__text-inner-part
               imagine-block__text-inner-part--subtitle
+              imagine-block__text-inner-part--accent
             "
             >and Earn</span
           >
