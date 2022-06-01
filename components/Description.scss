@@ -28,7 +28,8 @@
         &--logo {
             color: transparent;    
             background-clip: text;
-            background-image: $bg-gradient;
+            background-image: $text-gradient;
+            text-shadow: $text-shadow;
             font-size: 80px;
         }
     }
@@ -40,9 +41,10 @@
             line-height: 40px;
         }
         &-text {
+            letter-spacing: .1em;
             &--more {
                 font-family: 'Segoe UI';
-                font-weight: 100;
+                font-weight: 200;
                 font-size: 40px;
             }
             &--accent {

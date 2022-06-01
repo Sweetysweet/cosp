@@ -70,7 +70,8 @@
         font-size: 40px;
         color: transparent;    
         background-clip: text;
-        background-image: $bg-gradient;
+        background-image: $text-gradient;
+        text-shadow: $text-shadow;
 
         @include lg() {
             font-size: 128px;
